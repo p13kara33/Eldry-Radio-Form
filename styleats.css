@@ -1,0 +1,185 @@
+body 
+{
+  background: azure;
+  color: black;
+  font-family: 'Courier New', monospace;
+  font-size: 15px;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+}
+
+h1
+{
+    white-space: nowrap;
+    text-align: justify;
+    
+}
+
+
+
+form 
+{
+  max-width: 250px;
+  position: relative;
+  margin: 50px auto 0;
+  font-size: 15px;
+  font-family: 'w3tc';
+}
+
+.radiobtn 
+{
+  position: relative;
+  display: block;
+}
+.radiobtn label 
+{
+  display: block;
+  background: #56aae6;
+  color: #444;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 2px solid #56aae6;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+
+
+.next
+{
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.radiobtn label:after, .radiobtn label:before 
+{
+  content: "";
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: #99ccf0;
+}
+
+p
+{
+    position: absolute;
+    right: auto;
+    left: auto;
+    top: auto;
+    width: auto;
+    background: #99ccf0;
+    border: 2px solid #56aae6;
+    
+}
+
+.radiobtn label:before 
+{
+  background: transparent;
+  transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+  z-index: 2;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: center;
+  width: 0;
+  height: 0;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS4zIDEzLjIiPiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE0LjcuOGwtLjQtLjRhMS43IDEuNyAwIDAgMC0yLjMuMUw1LjIgOC4yIDMgNi40YTEuNyAxLjcgMCAwIDAtMi4zLjFMLjQgN2ExLjcgMS43IDAgMCAwIC4xIDIuM2wzLjggMy41YTEuNyAxLjcgMCAwIDAgMi40LS4xTDE1IDMuMWExLjcgMS43IDAgMCAwLS4yLTIuM3oiIGRhdGEtbmFtZT0iUGZhZCA0Ii8+PC9zdmc+);
+}
+.radiobtn input[type="radio"] 
+{
+  display: none;
+  position: absolute;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.radiobtn input[type="radio"]:checked + label 
+{
+  background: #1f86d1;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  border-color: #1f86d1;
+}
+.radiobtn input[type="radio"]:checked + label:after
+{
+  background: #0b314b;
+}
+.radiobtn input[type="radio"]:checked + label:before 
+{
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+@-webkit-keyframes blink
+{
+  0% {
+    background-color: #1f86d1;
+  }
+  10% {
+    background-color: #1f86d1;
+  }
+  11% {
+    background-color: #1f86d1;
+  }
+  29% {
+    background-color: #1f86d1;
+  }
+  30% {
+    background-color: #1f86d1;
+  }
+  50% {
+    background-color: #1f86d1;
+  }
+  45% {
+    background-color: #1f86d1;
+  }
+  50% {
+    background-color: #1f86d1;
+  }
+  100% {
+    background-color: #1f86d1;
+  }
+}
+
+@keyframes blink 
+{
+  0% {
+    background-color: #1f86d1;
+  }
+  10% {
+    background-color: #1f86d1;
+  }
+  11% {
+    background-color: #1f86d1;
+  }
+  29% {
+    background-color: #1f86d1;
+  }
+  30% {
+    background-color: #1f86d1;
+  }
+  50% {
+    background-color: #1f86d1;
+  }
+  45% {
+    background-color: #1f86d1;
+  }
+  50% {
+    background-color: #1f86d1;
+  }
+  100% {
+    background-color: #1f86d1;
+  }
+}
